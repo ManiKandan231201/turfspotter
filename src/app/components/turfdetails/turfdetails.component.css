@@ -1,0 +1,198 @@
+:host{
+  --primary-color:#0E1F17;
+  --secondary-color:#3C8563;
+  --third-color:#C3ECE0;
+  --icon-primary-color:#3C8563;
+  --icon-secondary-color:#ffff;
+  --background-color:#737373;
+}
+.turf-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  padding: 20px 0px 20px 0px;
+  width: 100%;
+  gap: 30px;
+  position: relative;
+}
+.turf-details-inner{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 30px;
+}
+.turf-details-inner-contents h1{
+  text-transform: uppercase;
+}
+.flexcontents{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flexcontents i{
+  color: var(--secondary-color);
+}
+.flexcontents h3{
+  color: var(--background-color);
+  font-size: 1.4rem;
+}
+.flexcontents button{
+  width: 100px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  height: 40px;
+}
+.booknow{
+  margin-left: 50%;
+}
+.booknow button{
+  width: 400px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background:linear-gradient( to left,var(--primary-color),var(--secondary-color));
+  color: var(--third-color);
+  height: 60px;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+.booknow button:hover{
+  background: var(--icon-secondary-color);
+  color: var(--icon-primary-color);
+  border: 2px solid var(--secondary-color);
+
+}
+.turf-details-inner-contents h2{
+  color: var(--secondary-color);
+}
+.textcontents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--third-color);
+}
+.textcontents label{
+  text-transform: uppercase;
+}
+.turf-details-inner-contents h4{
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.Address-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: var(--third-color);
+}
+.Address-contents a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.Address-contents i{
+  font-size: 1.3rem;
+}
+.Address-contents label{
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.column-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pitch-contents .pitch-inner-contents:nth-child(1){
+  width: 80px;
+  height: 80px;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.pitch-contents .pitch-inner-contents label{
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.Amenities-contents i{
+  font-size: 1.4rem;
+}
+.Amenities-contents label{
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+.other-turfs{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+}
+.turf-images{
+  width: 90%;
+  height: 400px;
+
+}
+.turf-images img{
+  width: 100%;
+  height: 390px;
+  border-radius: 30px;
+}
+.sub-turf-images{
+  width: 400px;
+  height: 300px;
+  background-color: var(--icon-secondary-color);
+  position: absolute;
+  top: 150px;
+  left: 1200px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.turf-sub-images{
+  width: 180px;
+  height: 120px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.turf-sub-images img{
+  width: 180px;
+  height: 110px;
+  border-radius: 10px;
+}
+.turf-sub-images:hover img{
+  transform: scale(1.2);
+  transition: all 500ms ease-in-out;
+}
